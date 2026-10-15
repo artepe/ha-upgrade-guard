@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ha-upgrade-guard"
+version = "0.1.0"
+description = "Read-only Home Assistant update regression detector with offline HTML reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "artepe"}]
+keywords = ["home-assistant", "regression", "diagnostics", "smart-home", "homeassistant"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+ha-upgrade-guard = "ha_upgrade_guard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
