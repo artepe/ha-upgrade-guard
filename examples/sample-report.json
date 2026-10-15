@@ -1,0 +1,60 @@
+{
+  "after": {
+    "captured_at": "2026-10-15T07:00:00+00:00",
+    "entities": 5,
+    "home_assistant_version": "2026.10.1"
+  },
+  "before": {
+    "captured_at": "2026-10-14T07:00:00+00:00",
+    "entities": 5,
+    "home_assistant_version": "2026.9.3"
+  },
+  "changes": [
+    {
+      "detail": "Healthy → unavailable",
+      "entity_id": "sensor.heat_pump_power",
+      "kind": "degraded",
+      "severity": "critical"
+    },
+    {
+      "detail": "Entity no longer exists in the state API",
+      "entity_id": "sensor.old_energy_meter",
+      "kind": "removed",
+      "severity": "critical"
+    },
+    {
+      "detail": "Capability changed: hvac_modes ([\"heat\", \"off\"] → [\"heat\"])",
+      "entity_id": "climate.living_room",
+      "kind": "capability_changed",
+      "severity": "warning"
+    },
+    {
+      "detail": "New entity",
+      "entity_id": "sensor.new_device",
+      "kind": "added",
+      "severity": "info"
+    },
+    {
+      "detail": "unavailable → healthy",
+      "entity_id": "sensor.recovered_later",
+      "kind": "recovered",
+      "severity": "info"
+    }
+  ],
+  "generated_at": "2026-10-15T06:57:41+00:00",
+  "ignored_patterns": [],
+  "report_schema_version": 1,
+  "severity_counts": {
+    "critical": 2,
+    "info": 2,
+    "warning": 1
+  },
+  "summary": {
+    "added": 1,
+    "capability_changed": 1,
+    "degraded": 1,
+    "health_changed": 0,
+    "recovered": 1,
+    "removed": 1
+  }
+}

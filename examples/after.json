@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-15T07:00:00+00:00",
+  "home_assistant_version": "2026.10.1",
+  "entities": {
+    "sensor.boiler_temperature": {"health": "ok", "capabilities": {"device_class": "temperature", "unit_of_measurement": "°C"}},
+    "sensor.heat_pump_power": {"health": "unavailable", "capabilities": {"device_class": "power", "unit_of_measurement": "W"}},
+    "climate.living_room": {"health": "ok", "capabilities": {"hvac_modes": ["heat"], "supported_features": 1}},
+    "sensor.recovered_later": {"health": "ok", "capabilities": {}},
+    "sensor.new_device": {"health": "ok", "capabilities": {"device_class": "temperature"}}
+  }
+}
