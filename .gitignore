@@ -13,3 +13,13 @@ after.json
 report.html
 report.md
 report.json
+
+# Secrets and local credentials: never commit
+!.env.example
+secrets.yaml
+*.pem
+*.key
+*.p12
+*credentials*.json
+*token*.json
+.storage/
